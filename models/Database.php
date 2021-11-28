@@ -1,6 +1,6 @@
 <?php
 
-class ClassName
+class Database
 {
     private $db;
     
