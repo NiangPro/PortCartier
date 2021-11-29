@@ -1,1 +1,1 @@
-<h2>Accueil membre</h2>
+<h2>Accueil Membre</h2>

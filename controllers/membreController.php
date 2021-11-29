@@ -1,1 +1,3 @@
-<h2>document membre</h2>
+<?php
+
+require_once("views/membre/document.php");
