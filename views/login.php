@@ -1,22 +1,21 @@
-<<<<<<< HEAD
-
-<h2>Login</h2>
-=======
-<div class="wrapper">
-    <h1>
-        Connexion
-    </h1>
-    <p>
-
-    </p>
-    <section cass="login-container" position="fixed" top="0" left="0" bottom="0" background="images/photoBib.jfif">
-        <div width="450px" margin="auto" padding="20px" text-align="center">
+<?php require_once("views/includes/_errors.php") ?>
+<div class="container col-md-3 mt-5 pt-5">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="text-center pb-3">Connexion</h3>
             <form action="" method="post">
-                <input type="text" name="username" placeholder="Nom d'utilisateur" required/>
-                <input type="password" name="password" placeholder="Mot de Passe" required/>
-                <button type="submit">Se Connecter</button>
+                <div class="form-group">
+                    <label for="">Code</label>
+                    <input type="text" name="code" id="" class="form-control" placeholder="Entrer le code" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Mot de passe</label>
+                    <input type="password" name="mdp" id="" class="form-control" placeholder="Entrer le mot de passe" required>
+                </div>
+                <button name="login" class="btn btn-outline-success btn-sm btn-rounded">Se connecter</button>
             </form>
-        </div>    
-    </section>
+        </div>
+    </div>
+    
 </div>
->>>>>>> Mamyta
+
