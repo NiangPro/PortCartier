@@ -4,7 +4,7 @@
         private $codeDoc;
         private $titre;
         private $auteur;
-        private $AnneePub;
+        private $anneePub;
         private $categorie;
         private $type;
         private $genre;
@@ -12,7 +12,7 @@
         private $isbn;      
 
         
-        public function __construct($codeDoc, $titre, $auteur, $anneePub, $categorie, $type, $genre, $description, $isbn)
+        public function __construct($codeDoc, $titre, $auteur, $anneePub, $categorie, $type, $genre, $description, $isbn = "")
             {
                 $this->codeDoc = $codeDoc;
                 $this->titre = $titre;
@@ -22,11 +22,12 @@
                 $this->type = $type;
                 $this->genre = $genre;
                 $this->isbn = $isbn;
+                $this->description = $description;
             }
 
         // les getters
 
-        public function Code(){return $this->code;}
+        public function CodeDoc(){return $this->codeDoc;}
 
         public function Titre(){return $this->titre;}
 
@@ -41,5 +42,7 @@
         public function Genre(){return $this->genre;}
 
         public function Isbn(){return $this->isbn;}
+
+        public function Description(){return $this->description;}
     }
 ?>

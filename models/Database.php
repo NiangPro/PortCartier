@@ -15,7 +15,7 @@ class Database
 
     public function login($code, $mdp){
         try {           
-            $req = $this->db->prepare("SELECT * FROM user WHERE code = :code AND mpd = :mdp");
+            $req = $this->db->prepare("SELECT * FROM user WHERE code = :code AND mdp = :mdp");
             $req->execute([
                 "code" => $code,
                 "mdp" => $mdp

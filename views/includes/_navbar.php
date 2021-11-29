@@ -12,15 +12,10 @@
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
                         <!-- Logo icon -->
-                        <a href="index.html">
-                            <b class="logo-icon">
-                                <!-- Dark Logo icon -->
-                                <img src="storage/images/logo.jpg" alt="homepage" class="rounded-circle"
-                                    width="40" />
-                            </b>
+                        <a href="#">
                             <!--End Logo icon -->
                             <!-- Logo text -->
-                            <span class="logo-text text-capitalize text-dark">
+                            <span class="logo-text text-capitalize h1 text-dark">
                                 <!-- dark Logo text -->
                                 GesBiblio
                             </span>
@@ -57,9 +52,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="storage/images/{{Auth::user()->photo}}" alt="user" class=" bg-light rounded-circle"
+                                <img src="images/profil.png" class=" bg-light rounded-circle"
                                     width="40">
-                                <span class="ml-2 d-none d-lg-inline-block"><span>Admin</span> <i data-feather="chevron-down"
+                                <span class="ml-2 d-none d-lg-inline-block"><span><?= $_SESSION['user']->code ?></span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -67,7 +62,7 @@
                                         class="svg-icon mr-2 ml-1"></i>
                                     Profil</a>
                                     <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{route('password')}}"><i
+                                <a class="dropdown-item" href="?page=logout"><i
                                         class="fas fa-lock mr-2 ml-1"></i>
                                         Deconnexion</a>
                             </div>

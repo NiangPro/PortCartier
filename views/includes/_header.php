@@ -34,6 +34,7 @@
             background: rgb(104, 101, 101);
             color: white!important;
         }
+
     </style>
 
 </head>
@@ -69,7 +70,7 @@
                 <div class="row">
                     <div  id="typed-element" class="col-md-7 align-self-center">
                         <h3 class="page-title text-truncate text-dark font-weight-medium mb-1 display-4">
-                            <i class="fas fa-arrows-alt"></i>Accueil </h3>
+                            <i class="fas fa-arrows-alt"></i><?= ucfirst($_GET['page']) ?> </h3>
 
                     </div>
                     <h3 class="page-title text-truncate text-dark font-weight-medium mb-1 display-4" id="typed"></h3>
