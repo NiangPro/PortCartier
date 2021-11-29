@@ -1,17 +1,31 @@
-<div class="wrapper">
-    <h1>
-        Connexion
-    </h1>
-    <p>
+<html>
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            <!-- zone de connexion -->
+            
+            <form action="verification.php" method="POST">
+                <h1>Connexion</h1>
+                
+                <label><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
 
-    </p>
-    <section class="login-container" position="fixed" top="0" left="0" bottom="0" background-image="images/bib.">
-        <div width="450px" margin="auto" padding="20px" text-align="center">
-            <form action="" method="post" display="flex" flex-direction="column">
-                <input type="text" name="username" placeholder="Nom d'utilisateur" required/>
-                <input type="password" name="password" placeholder="Mot de Passe" required/>
-                <button type="submit">Se Connecter</button>
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+                <input type="submit" id='submit' value='LOGIN' >
+                <?php
+                if(isset($_GET['erreur'])){
+                    $err = $_GET['erreur'];
+                    if($err==1 || $err==2)
+                        echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+                }
+                ?>
             </form>
-        </div>    
-    </section>
-</div>
+        </div>
+    </body>
+</html>
