@@ -24,7 +24,19 @@
             case 'membres':
                 require_once('controllers/adminController.php');
                 break;
+            case 'reservation':
+                require_once('controllers/adminController.php');
+                break;
+            case 'pret':
+                require_once('controllers/adminController.php');
+                break;
             case 'document membre':
+                require_once('controllers/membreController.php');
+                break;
+            case 'reservation membre':
+                require_once('controllers/membreController.php');
+                break;
+            case 'pret membre':
                 require_once('controllers/membreController.php');
                 break;
             case 'logout':

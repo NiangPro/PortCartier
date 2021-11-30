@@ -95,3 +95,5 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] == null) {
             <!-- ============================================================== -->
             <div class="container-fluid" style="margin-top: 90px;">
 
+                <?php  require_once('views/includes/_errors.php'); ?>
+                <?php  require_once('views/includes/_success.php'); ?>
