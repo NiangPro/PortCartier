@@ -32,7 +32,14 @@
 
     <script src="assets/dist/js/pages/dashboards/dashboard1.min.js"></script>
     
+    <script src="assets/DataTables/js/jquery.dataTables.min.js"></script>
 
+    <script>
+         $(document).ready( function () {<font></font>
+            $('#myTable').DataTable();<font></font>
+        } );<font></font>
+    </script>
+   
 </body>
 
 </html>

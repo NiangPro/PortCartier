@@ -1,5 +1,11 @@
+<?php 
+if (!isset($_SESSION['user']) || $_SESSION['user'] == null) {
+    return header('Location:?login');
+}
+ ?>
+
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -23,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-tagsinput.css">
     
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/DataTables/css/jquery.dataTables.min.css"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <style>
         .active{
