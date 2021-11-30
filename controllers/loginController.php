@@ -1,5 +1,6 @@
 <?php
 
+$_SESSION['user'] = null;
 
 if (isset($_POST['login'])) {
     extract($_POST);

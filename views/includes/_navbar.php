@@ -62,7 +62,7 @@
                                         class="svg-icon mr-2 ml-1"></i>
                                     Profil</a>
                                     <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="?page=logout"><i
+                                <a class="dropdown-item" href="?login"><i
                                         class="fas fa-lock mr-2 ml-1"></i>
                                         Deconnexion</a>
                             </div>

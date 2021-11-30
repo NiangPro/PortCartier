@@ -18,6 +18,12 @@
             case 'document':
                 require_once('controllers/adminController.php');
                 break;
+            case 'employes':
+                require_once('controllers/adminController.php');
+                break;
+            case 'membres':
+                require_once('controllers/adminController.php');
+                break;
             case 'document membre':
                 require_once('controllers/membreController.php');
                 break;
