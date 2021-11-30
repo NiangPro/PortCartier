@@ -27,4 +27,28 @@ class Database
             die("Erreur :".$th->getMessage());
         }
     }
+
+    public function employesAndAdmins(){
+        try {           
+            $req = $this->db->prepare("SELECT * FROM user WHERE type = 'admin' OR type = 'employe'");
+            $req->execute();
+
+            return $req->fetchAll();
+
+        } catch (\Throwable $th) {
+            die("Erreur :".$th->getMessage());
+        }
+    }
+
+    public function membres(){
+        try {           
+            $req = $this->db->prepare("SELECT * FROM user WHERE type = 'membre'");
+            $req->execute();
+
+            return $req->fetchAll();
+
+        } catch (\Throwable $th) {
+            die("Erreur :".$th->getMessage());
+        }
+    }
 }
