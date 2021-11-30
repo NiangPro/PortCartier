@@ -1,1 +1,0 @@
-<H2>Accueil admin</H2>
