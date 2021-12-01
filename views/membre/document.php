@@ -1,6 +1,6 @@
 <div class="row">
       <div class="col-12">
-      <table class="table table-striped" id="myTable">
+      <table class="table table-striped" id="dataTable">
           <thead>
           <tr>
               <th>Code Document</th>
