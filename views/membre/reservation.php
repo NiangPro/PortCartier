@@ -1,3 +1,4 @@
+<div class="row">   
     <div class="col-md-3">
         <div class="card">
             <div class="card-body">
@@ -25,30 +26,27 @@
             <div class="card-body">
                 <h4 class="card-title">Liste des réservatins</h4>
                 </br>
-                <div class="table-respnsive">
+                <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                                <th>Titre</th>
+                                <th>Auteur</th>
+                                <th>Type</th>
+                                <th>Genre</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($dcument as $dc): ?>
-                                <tr>
-                                    <td><?= $dc-> ?></td>
-                                    <td><?= $dc-> ?></td>
-                                    <td><?= $dc-> ?></td>
-                                    <td><?= $dc-> ?></td>
-                                    <td><?= $dc-> ?></td>
-                                </tr>
-                            <?php endforeach; ?>
+                            <tr>
+                                <td>Le reflet du passé</td>
+                                <td>Gallas Diop</td>
+                                <td>Roman</td>
+                                <td>Ado</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
