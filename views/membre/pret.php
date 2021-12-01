@@ -38,6 +38,8 @@
                                 <th>Auteur</th>
                                 <th>Type</th>
                                 <th>Genre</th>
+                                <th>Date Prêt</th>
+                                <th>Date Retour </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,6 +48,8 @@
                                 <td>Gallas Diop</td>
                                 <td>Roman</td>
                                 <td>Ado</td>
+                                <td>10/11/2021</td>
+                                <td>20/11/2021</td>
                             </tr>
                         </tbody>
                     </table>

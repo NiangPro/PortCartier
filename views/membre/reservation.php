@@ -24,7 +24,7 @@
     <div class="col-md-9">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Liste des réservatins</h4>
+                <h4 class="card-title">Liste des réservations</h4>
                 </br>
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -34,6 +34,7 @@
                                 <th>Auteur</th>
                                 <th>Type</th>
                                 <th>Genre</th>
+                                <th>Date Réservation</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -42,6 +43,7 @@
                                 <td>Gallas Diop</td>
                                 <td>Roman</td>
                                 <td>Ado</td>
+                                <td>01/12/2021</td>
                             </tr>
                         </tbody>
                     </table>
