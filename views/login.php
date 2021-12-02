@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 <?php require_once("views/includes/_errors.php") ?>
+=======
+<?php require_once("views/includes/_flash.php") ?>
+>>>>>>> niangpro
 <div class="container col-md-3 mt-5 pt-5">
     <div class="card">
         <div class="card-body">
@@ -7,7 +11,7 @@
             <form action="" method="post">
                 <div class="form-group">
                     <label for="">Code</label>
-                    <input type="text" name="code" id="" class="form-control" placeholder="Entrer le code" required>
+                    <input type="text" name="code" value="<?= get_input('code')?>" class="form-control" placeholder="Entrer le code" required>
                 </div>
                 <div class="form-group">
                     <label for="">Mot de passe</label>
