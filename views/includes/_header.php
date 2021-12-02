@@ -28,7 +28,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] == null) {
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-tagsinput.css">
     
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/DataTables/css/jquery.dataTables.min.css"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <style>
@@ -95,5 +95,4 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] == null) {
             <!-- ============================================================== -->
             <div class="container-fluid" style="margin-top: 90px;">
 
-                <?php  require_once('views/includes/_errors.php'); ?>
-                <?php  require_once('views/includes/_success.php'); ?>
+                <?php  require_once('views/includes/_flash.php'); ?>

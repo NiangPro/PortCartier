@@ -35,9 +35,9 @@
     <script src="assets/DataTables/js/jquery.dataTables.min.js"></script>
 
     <script>
-         $(document).ready( function () {<font></font>
-            $('#myTable').DataTable();<font></font>
-        } );<font></font>
+         $(document).ready( function () {
+            $('#dataTable').DataTable();
+        } );
     </script>
    
 </body>
