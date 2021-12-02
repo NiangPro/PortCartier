@@ -7,16 +7,18 @@ if (isset($_POST['login'])) {
     $user = $db->login($code, $mdp);
 
     if ($user) {
+        clear_input_data();
         $_SESSION['user'] = $user;
-        if($user->type === "admin"){
-            return header('Location:?page=document');
-        }elseif($user->type === "membre"){
+        if($user->type === "admin" || $user->type === "employe"){
+            // page admin et employe
             return header('Location:?page=document');
         }else{
+            // page membre
             return header('Location:?page=document membre');
         }
     }else{
-        $_SESSION['errors']['msg'][] = "Code ou Mot de passe incorrect";
+        set_flash("Code ou Mot de passe incorrect");
     }
+    save_input_data();
 }
 require_once("views/login.php");
