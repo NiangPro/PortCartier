@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 <?php require_once("views/includes/_flash.php") ?>
+=======
+<<<<<<< HEAD
+
+<?php require_once("views/includes/_errors.php") ?>
+=======
+<?php require_once("views/includes/_flash.php") ?>
+>>>>>>> niangpro
+>>>>>>> master
 <div class="container col-md-3 mt-5 pt-5">
     <div class="card">
         <div class="card-body">
@@ -18,4 +27,3 @@
     </div>
     
 </div>
-

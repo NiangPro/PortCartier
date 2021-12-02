@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<h2>Accueil Admin</h2>
+=======
+>>>>>>> niangpro
+=======
+>>>>>>> master
 <!-- insertion d'un employe -->
 <div class="card">
     <div class="card-body">
@@ -133,3 +142,7 @@
     
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> niangpro
+>>>>>>> master
