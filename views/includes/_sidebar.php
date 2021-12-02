@@ -9,16 +9,9 @@
                     <ul id="sidebarnav">
                         <?php if($_SESSION['user']->type == "membre"): ?>
                             <li class="sidebar-item"> <a class="sidebar-link" href="?page=document membre"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                                aria-expanded="false"><i data-feather="book" class="feather-icon"></i><span
+                                 aria-expanded="false"><i data-feather="book" class="feather-icon"></i><span
                                 class="hide-menu">Document</span></a>
-=======
->>>>>>> master
-                                    aria-expanded="false"><i data-feather="book" class="feather-icon"></i><span
-                                        class="hide-menu">Document</span></a>
->>>>>>> niangpro
+
                             </li>
                             <li class="sidebar-item"> <a class="sidebar-link" href="?page=reservation membre"
                                 aria-expanded="false"><i data-feather="file" class="feather-icon"></i><span
