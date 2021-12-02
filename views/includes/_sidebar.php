@@ -8,9 +8,9 @@
                 <nav class="sidebar-nav ">
                     <ul id="sidebarnav">
                         <?php if($_SESSION['user']->type == "membre"): ?>
-                            <li class="sidebar-item"> <a class="sidebar-link" href=""
-                                    aria-expanded="false"><i data-feather="book" class="feather-icon"></i><span
-                                        class="hide-menu">Document</span></a>
+                            <li class="sidebar-item"> <a class="sidebar-link" href="?page=document membre"
+                                aria-expanded="false"><i data-feather="book" class="feather-icon"></i><span
+                                class="hide-menu">Document</span></a>
                             </li>
                             <li class="sidebar-item"> <a class="sidebar-link" href="?page=reservation membre"
                                 aria-expanded="false"><i data-feather="file" class="feather-icon"></i><span
